@@ -1,0 +1,13 @@
+<p>
+    <%= form_for([@auction_thing,@bid]) do |f| %>
+</p>
+<p>
+    <%= f.label :amount_in_cents %>
+    <%= f.text_field(:amount_in_cents)  %>
+</p>
+
+<p>
+<p>
+    <%= f.submit %>
+</p>
+  <% end %>

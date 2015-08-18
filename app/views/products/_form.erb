@@ -1,0 +1,18 @@
+<p>
+    <%= form_for(@product) do |f| %>
+</p>
+<p>
+    <%= f.label :title %>
+    <%= f.text_field(:title)  %>
+</p>
+<p>
+  <%= f.label :description %>
+    <%= f.text_area( :description)  %>
+</p>
+<p>
+<p>
+    <%= f.submit %>
+</p>
+  <% end %>
+
+    <%= link_to("products", products_url ) %>

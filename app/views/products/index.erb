@@ -1,0 +1,15 @@
+<strong>
+  <%= Time.now %>
+</strong>
+
+
+<% @products.each do |p| %>
+  <%= p.title %>
+  <%= time_ago_in_words(p.created_at) %>
+  <%= link_to(p.title, product_url(p)) %>
+  <%= link_to("Zap Product", product_url(p), method: :delete ) %>
+  <%= link_to("Edit Product", edit_product_url(p) ) %>
+  <% end %>
+
+
+  <%= link_to("New Product", new_product_url ) %>

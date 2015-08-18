@@ -1,0 +1,7 @@
+<%= @auction_thing.auction_title %>
+
+<%= link_to("Bids for this auction", auction_thing_bids_url(@auction_thing)) %>
+
+<%= link_to("New Bid for this Auction", new_auction_thing_bid_url(@auction_thing)) %>
+
+  <%= link_to("Zap Auc thing", auction_thing_url(@auction_thing), method: :delete, data: { confirm: "Are you Sure?" }) %>

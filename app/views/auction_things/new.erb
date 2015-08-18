@@ -1,0 +1,16 @@
+<p>
+    <%= form_for(@auction_thing) do |f| %>
+</p>
+<p>
+    <%= f.label :auction_title %>
+    <%= f.text_field(:auction_title)  %>
+</p>
+<p>
+  <%= f.label :auction_desc %>
+    <%= f.text_area( :auction_desc)  %>
+</p>
+<p>
+<p>
+    <%= f.submit %>
+</p>
+  <% end %>

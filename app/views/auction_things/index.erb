@@ -1,0 +1,10 @@
+<% @auction_things.each do |a| %>
+  <%= a.auction_title %>
+
+  <%= link_to(a.auction_title, auction_thing_url(a)) %>
+  <%= link_to("Zap Auc thing", auction_thing_url(a), method: :delete ) %>
+
+  <% end %>
+
+
+  <%= link_to("New Auction Thing", new_auction_thing_url ) %>
